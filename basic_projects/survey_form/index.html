@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Health Survey Form</h1>
+    <p id="description">Please take few minutes to fill this form</p>
+    <form action='https://register-demo.freecodecamp.org' id= "survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="John Davis" /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="example@gmail.com" /></label>
+        <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="age" min="0" max="140" placeholder="25"/></label>
+        <label for="phone number">Enter Your Phone Number: <input id="phone-number" name="phone-number" type="number" required /></label>
+
+        <label for="dropdown">Enter Your Gender
+          <select id="dropdown" name="gender" type="text" required>
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Not comfortable to mention</option>
+          </select> 
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Type of family:</h3>
+        <label for="family">
+           <input id="family" name="family" type="radio" value="One"/>Nuclear
+        </label>
+        <label>
+            <input id="family" name="family" type="radio" value="Two" />Extended
+        </label>
+        </fieldset>
+        <fieldset>
+            <h3>Lighting Facility:</h3>
+            <label for="lights">
+                <input id="lights" name="lights" type="radio" value="1st" />Electricity
+              </label>
+              <label for="lights">
+                <input id="lights" name="lights" type="radio" value="2nd" />Kerosene
+              </label>
+        </fieldset>
+        <fieldset>
+            <h3>Availability of:</h3>
+            <label for="sanitation">
+                <input id="sanitation" name="drainage" value="1" type="checkbox"/>Drainage
+              </label>
+            <label for="sanitation">
+                <input id="sanitation" name="water-supply" value="2" type="checkbox"/>Water Supply
+            </label>
+            <label for="sanitation">
+                <input id="sanitation" name="toilet" value="3" type="checkbox"/>Toilet
+            </label>
+        </fieldset>
+        
+        <label for="feedback">Provide feedback:<br>
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="How can we improve community health condition according to you"></textarea>
+        </label>
+      </fieldet><br>
+      <label for="submit"><input id="submit" type="submit" value="Submit" /></label>
+    </form>
+  </body>
+</html>
